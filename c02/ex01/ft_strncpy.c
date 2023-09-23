@@ -1,34 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_power.c                               :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcao <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/20 14:04:30 by dcao              #+#    #+#             */
-/*   Updated: 2023/09/20 14:05:57 by dcao             ###   ########.fr       */
+/*   Created: 2023/09/11 20:02:39 by dcao              #+#    #+#             */
+/*   Updated: 2023/09/12 15:46:37 by dcao             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+/*#include <stdio.h>*/
 
-int	ft_recursive_power(int nb, int power)
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	if (power < 0)
-	{
-		return (0);
-	}
-	if (power == 0)
-	{
-		return (1);
-	}
-	return (nb * ft_recursive_power(nb, power - 1));
-}
+	unsigned int	i;
 
-int main (void)
+	i = 0;
+	while (i < n && src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
+}
+/*
+int	main(void)
 {
-	printf("%d\n", ft_recursive_power(4, 0));
-	printf("%d\n", ft_recursive_power(4, -1));
-	printf("%d", ft_recursive_power(4, 2));
-}
-
+	char	dest[50];
+	char	src[] = {'A', 'H', 'O', 'J', '\0'};
+	ft_strncpy(dest, src, 20);
+	printf("%s\n", dest);
+}*/

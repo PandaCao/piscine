@@ -1,34 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_power.c                               :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcao <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/20 14:04:30 by dcao              #+#    #+#             */
-/*   Updated: 2023/09/20 14:05:57 by dcao             ###   ########.fr       */
+/*   Created: 2023/09/11 17:33:44 by dcao              #+#    #+#             */
+/*   Updated: 2023/09/11 18:02:00 by dcao             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-int	ft_recursive_power(int nb, int power)
+void	ft_rev_int_tab(int *tab, int size)
 {
-	if (power < 0)
-	{
-		return (0);
-	}
-	if (power == 0)
-	{
-		return (1);
-	}
-	return (nb * ft_recursive_power(nb, power - 1));
-}
+	int	i;
+	int	tmp;
 
-int main (void)
-{
-	printf("%d\n", ft_recursive_power(4, 0));
-	printf("%d\n", ft_recursive_power(4, -1));
-	printf("%d", ft_recursive_power(4, 2));
+	i = 0;
+	while (i < size / 2)
+	{
+		tmp = tab[i];
+		tab[i] = tab[size - 1 - i];
+		tab[size - 1 - i] = tmp;
+		i++;
+	}
 }
-

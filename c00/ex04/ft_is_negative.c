@@ -1,34 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_power.c                               :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcao <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/20 14:04:30 by dcao              #+#    #+#             */
-/*   Updated: 2023/09/20 14:05:57 by dcao             ###   ########.fr       */
+/*   Created: 2023/09/06 19:34:04 by dcao              #+#    #+#             */
+/*   Updated: 2023/09/06 21:24:49 by dcao             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+/*#include <stdio.h>*/
+#include <unistd.h>
 
-int	ft_recursive_power(int nb, int power)
+void	ft_is_negative(int i)
 {
-	if (power < 0)
+	if (i >= 0)
 	{
-		return (0);
+		write(1, "P", 1);
 	}
-	if (power == 0)
+	else
 	{
-		return (1);
+		write(1, "N", 1);
 	}
-	return (nb * ft_recursive_power(nb, power - 1));
 }
 
-int main (void)
+/*int	main(void)
 {
-	printf("%d\n", ft_recursive_power(4, 0));
-	printf("%d\n", ft_recursive_power(4, -1));
-	printf("%d", ft_recursive_power(4, 2));
-}
+	int	num;
 
+	printf("Type number\n");
+	scanf("%d", &num);
+	printf("Number is: ");
+	ft_is_negative(num);
+	printf("\n");
+	return (0);
+}*/

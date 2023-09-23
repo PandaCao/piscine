@@ -1,34 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_power.c                               :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcao <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/20 14:04:30 by dcao              #+#    #+#             */
-/*   Updated: 2023/09/20 14:05:57 by dcao             ###   ########.fr       */
+/*   Created: 2023/09/12 12:20:58 by dcao              #+#    #+#             */
+/*   Updated: 2023/09/12 12:49:59 by dcao             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
 
-int	ft_recursive_power(int nb, int power)
+int	ft_strcmp(char *s1, char *s2)
 {
-	if (power < 0)
+	while (*s1 != '\0' && *s1 == *s2)
 	{
-		return (0);
+		s1++;
+		s2++;
 	}
-	if (power == 0)
-	{
-		return (1);
-	}
-	return (nb * ft_recursive_power(nb, power - 1));
+	return (*(unsigned char *)s1 - *(unsigned char *)s2);
 }
 
-int main (void)
+/*int	main(void)
 {
-	printf("%d\n", ft_recursive_power(4, 0));
-	printf("%d\n", ft_recursive_power(4, -1));
-	printf("%d", ft_recursive_power(4, 2));
-}
+	char str1[] = "AHOJDA";
+	char str2[] = "AHOJ";
 
+	printf("%d",ft_strcmp(str1, str2));
+
+}*/

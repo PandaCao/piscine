@@ -1,34 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_power.c                               :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcao <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/20 14:04:30 by dcao              #+#    #+#             */
-/*   Updated: 2023/09/20 14:05:57 by dcao             ###   ########.fr       */
+/*   Created: 2023/09/11 18:09:58 by dcao              #+#    #+#             */
+/*   Updated: 2023/09/11 20:01:45 by dcao             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-int	ft_recursive_power(int nb, int power)
+char	*ft_strcpy(char *dest, char *src)
 {
-	if (power < 0)
-	{
-		return (0);
-	}
-	if (power == 0)
-	{
-		return (1);
-	}
-	return (nb * ft_recursive_power(nb, power - 1));
-}
+	int	n;
 
-int main (void)
+	n = 0;
+	while (src[n] != '\0')
+	{
+		dest[n] = src[n];
+		n++;
+	}
+	dest[n] = '\0';
+	return (dest);
+}
+/*
+int	main(void)
 {
-	printf("%d\n", ft_recursive_power(4, 0));
-	printf("%d\n", ft_recursive_power(4, -1));
-	printf("%d", ft_recursive_power(4, 2));
-}
+	char	dest[50];
+	char	src[5];
 
+	src[0] = 'A';
+	src[1] = 'H';
+	src[2] = 'O';
+	src[3] = 'J';
+	src[4] = '\0';
+	ft_strcpy(dest, src);
+	return (0);
+}*/

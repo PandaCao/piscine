@@ -28,9 +28,9 @@ int	ft_recursive_factorial(int nb)
 	}
 	return (nb);
 }
-/*
+
 int main (void)
 {
 	printf("%d", ft_recursive_factorial(4));
 }
-*/
+

@@ -1,34 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_power.c                               :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcao <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/20 14:04:30 by dcao              #+#    #+#             */
-/*   Updated: 2023/09/20 14:05:57 by dcao             ###   ########.fr       */
+/*   Created: 2023/09/12 11:42:46 by dcao              #+#    #+#             */
+/*   Updated: 2023/09/13 18:51:07 by dcao             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	ft_recursive_power(int nb, int power)
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	if (power < 0)
+	unsigned int	i;
+
+	i = 0;
+	while (i < size - 1 && src[i] != '\0')
 	{
-		return (0);
+		dest[i] = src[i];
+		i++;
 	}
-	if (power == 0)
-	{
-		return (1);
-	}
-	return (nb * ft_recursive_power(nb, power - 1));
+	dest[i] = '\0';
+	return (i);
 }
 
-int main (void)
-{
-	printf("%d\n", ft_recursive_power(4, 0));
-	printf("%d\n", ft_recursive_power(4, -1));
-	printf("%d", ft_recursive_power(4, 2));
-}
-
+// int	main(void)
+// {
+// 	char	*src;
+// 	char	dest[50];
+//
+// 	src = "AHOJ";
+// 	printf("%d", ft_strlcpy(dest, src
+// }

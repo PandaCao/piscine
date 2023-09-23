@@ -1,34 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_power.c                               :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcao <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/20 14:04:30 by dcao              #+#    #+#             */
-/*   Updated: 2023/09/20 14:05:57 by dcao             ###   ########.fr       */
+/*   Created: 2023/09/12 16:27:52 by dcao              #+#    #+#             */
+/*   Updated: 2023/09/12 16:28:04 by dcao             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-int	ft_recursive_power(int nb, int power)
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	if (power < 0)
+	while (*s1 != '\0' && *s1 == *s2 && n > 1)
 	{
-		return (0);
+		s1++;
+		s2++;
+		n--;
 	}
-	if (power == 0)
+	if (n > 0)
 	{
-		return (1);
+		return (*(unsigned char *)s1 - *(unsigned char *)s2);
 	}
-	return (nb * ft_recursive_power(nb, power - 1));
+	return (0);
 }
-
-int main (void)
-{
-	printf("%d\n", ft_recursive_power(4, 0));
-	printf("%d\n", ft_recursive_power(4, -1));
-	printf("%d", ft_recursive_power(4, 2));
-}
-
