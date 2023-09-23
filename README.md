@@ -48,7 +48,7 @@ My exercices
 ## C02
 - [Exercise 00: ft_strcpy](https://github.com/PandaCao/piscine/blob/main/c02v4/ex00/ft_strcpy.c)
 - [Exercise 01: ft_strncpy](https://github.com/PandaCao/piscine/blob/main/c02v4/ex01/ft_strncpy.c)
-- [Exercise 02: ft_str_is_aplha]https://github.com/PandaCao/piscine/blob/main/c02v4/ex02/ft_str_is_alpha.c)
+- [Exercise 02: ft_str_is_aplha](https://github.com/PandaCao/piscine/blob/main/c02v4/ex02/ft_str_is_alpha.c)
 - [Exercise 03: ft_str_is_numeric](https://github.com/PandaCao/piscine/blob/main/c02v4/ex03/ft_str_is_numeric.c)
 - [Exercise 04: ft_str_is_lowercase](https://github.com/PandaCao/piscine/blob/main/c02v4/ex04/ft_str_is_lowercase.c)
 - [Exercise 05: ft_str_is_uppercase](https://github.com/PandaCao/piscine/blob/main/c02v4/ex05/ft_str_is_uppercase.c)
@@ -94,12 +94,12 @@ My exercices
 - [Exercise 03: ft_sort_params]()
 
 ## C07
--[Exersice 00: ft_strdup](https://github.com/PandaCao/piscine/blob/main/c07/ex00/ft_strdup.c)
--[Exersice 01: ft_range](https://github.com/PandaCao/piscine/blob/main/c07/ex01/ft_range.c)
--[Exersice 02: ft_ultimate_range](https://github.com/PandaCao/piscine/blob/main/c07/ex02/ft_ultimate_range.c)
--[Exersice 03: ft_strjoin](https://github.com/PandaCao/piscine/blob/main/c07/ex03/ft_strjoin.c)
--[Exersice 04: ft_convert_base]()
--[Exersice 05: ft_split]()
+- [Exersice 00: ft_strdup](https://github.com/PandaCao/piscine/blob/main/c07/ex00/ft_strdup.c)
+- [Exersice 01: ft_range](https://github.com/PandaCao/piscine/blob/main/c07/ex01/ft_range.c)
+- [Exersice 02: ft_ultimate_range](https://github.com/PandaCao/piscine/blob/main/c07/ex02/ft_ultimate_range.c)
+- [Exersice 03: ft_strjoin](https://github.com/PandaCao/piscine/blob/main/c07/ex03/ft_strjoin.c)
+- [Exersice 04: ft_convert_base]()
+- [Exersice 05: ft_split]()
 
 ## C08
 - [Exercise 00: ft.h]()
