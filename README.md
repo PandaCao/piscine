@@ -108,3 +108,8 @@ My exercices
 - [Exercise 03: ft_point.h]()
 - [Exercise 04: ft_strs_to_tab]()
 - [Exercise 05: ft_show_tab]()
+
+## C09
+- [Exercise 00: libft}()
+- [Exercise 01: Makefile}()
+- [Exercise 02: ft_split]()
