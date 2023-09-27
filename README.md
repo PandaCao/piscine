@@ -110,6 +110,6 @@ My exercices
 - [Exercise 05: ft_show_tab]()
 
 ## C09
-- [Exercise 00: libft}()
-- [Exercise 01: Makefile}()
+- [Exercise 00: libft]()
+- [Exercise 01: Makefile]()
 - [Exercise 02: ft_split]()
