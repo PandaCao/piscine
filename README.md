@@ -91,7 +91,7 @@ My exercices
 - [Exercise 00: ft_print_program_name](https://github.com/PandaCao/piscine/blob/main/c06/ex00/ft_print_program_name.c)
 - [Exercise 01: ft_print_params](https://github.com/PandaCao/piscine/blob/main/c06/ex01/ft_print_params.c)
 - [Exercise 02: ft_rev_params](https://github.com/PandaCao/piscine/blob/main/c06/ex02/ft_rev_params.c)
-- [Exercise 03: ft_sort_params]()
+- [Exercise 03: ft_sort_params](https://github.com/PandaCao/piscine/blob/main/c06/ex03/ft_sort_params.c)
 
 ## C07
 - [Exersice 00: ft_strdup](https://github.com/PandaCao/piscine/blob/main/c07/ex00/ft_strdup.c)
@@ -102,14 +102,14 @@ My exercices
 - [Exersice 05: ft_split]()
 
 ## C08
-- [Exercise 00: ft.h]()
-- [Exercise 01: ft_boolean.h]()
-- [Exercise 02: ft_abs.h]()
-- [Exercise 03: ft_point.h]()
-- [Exercise 04: ft_strs_to_tab]()
-- [Exercise 05: ft_show_tab]()
+- [Exercise 00: ft.h](https://github.com/PandaCao/piscine/blob/main/c08/ex00/ft.h)
+- [Exercise 01: ft_boolean.h](https://github.com/PandaCao/piscine/blob/main/c08/ex01/ft_boolean.h)
+- [Exercise 02: ft_abs.h](https://github.com/PandaCao/piscine/blob/main/c08/ex02/ft_abs.h)
+- [Exercise 03: ft_point.h](https://github.com/PandaCao/piscine/blob/main/c08/ex03/ft_point.h)
+- [Exercise 04: ft_strs_to_tab](https://github.com/PandaCao/piscine/blob/main/c08/ex04/ft_strs_to_tab.c)
+- [Exercise 05: ft_show_tab](https://github.com/PandaCao/piscine/blob/main/c08/ex05/ft_show_tab.c)
 
 ## C09
-- [Exercise 00: libft]()
-- [Exercise 01: Makefile]()
-- [Exercise 02: ft_split]()
+- [Exercise 00: libft](https://github.com/PandaCao/piscine/blob/main/c09/ex00/libft.h)
+- [Exercise 01: Makefile](https://github.com/PandaCao/piscine/blob/main/c09/ex01/Makefile)
+- [Exercise 02: ft_split](https://github.com/PandaCao/piscine/blob/main/c09/ex02/ft_split.c)
